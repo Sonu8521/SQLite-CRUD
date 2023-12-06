@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pngtree"
+    tools:context=".EditActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/blank"
+        />
+
+    <TextView
+        android:id="@+id/updateanddelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update &amp; Delete"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="80sp"
+        android:textSize="30dp"
+        android:layout_marginTop="-55dp"
+         android:textColor="@color/orange"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_below="@+id/updateanddelete"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint=" User Id"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_person"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etId"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:hint=" User Name"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_person_24"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:hint=" Email"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_email_24"
+        />
+
+    <EditText
+        android:id="@+id/etContact"
+        android:layout_below="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:hint=" Contact"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_local_phone_24"
+        />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_below="@+id/etContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:hint=" Address"
+        android:textSize="20dp"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_home_24"
+        />
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAddress"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAddress"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="-45dp"
+            android:layout_toRightOf="@id/btnUpdate"
+            android:text="Delete" />
+
+
+</LinearLayout>

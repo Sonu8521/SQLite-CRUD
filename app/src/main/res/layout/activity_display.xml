@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DisplayActivity">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="313dp"
+        android:layout_height="34dp"
+        android:text="Displaying Data"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="566dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:background="#F0F0F0"
+        android:scrollbars="vertical" />
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnAlter"
+        android:text="Alter Table"
+        android:layout_gravity="center"
+        android:backgroundTint="#ff4578"
+        />
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/simplewallpaper"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/banner"
+
+        />
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        android:layout_marginTop="-80dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WelCome"
+        android:textColor="@color/white"
+        android:layout_marginStart="230dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="-10dp"
+        />
+
+
+      <EditText
+          android:id="@+id/etId"
+          android:layout_below="@+id/Login"
+          android:layout_width="match_parent"
+          android:background="@drawable/shape_button"
+          android:padding="5dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="60dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginBottom="20dp"
+          android:hint=" User Id"
+          android:inputType="number"
+          android:textSize="20dp" />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_person"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etId"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:hint=" User Name"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_person_24"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:hint=" Email"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_email_24"
+        />
+
+    <EditText
+        android:id="@+id/etContact"
+        android:layout_below="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:inputType="number"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:hint=" Contact"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_local_phone_24"
+        />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_below="@+id/etContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:hint=" Address"
+        android:textSize="20dp"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_home_24"
+        />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/etAddress"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Submit"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="90dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
